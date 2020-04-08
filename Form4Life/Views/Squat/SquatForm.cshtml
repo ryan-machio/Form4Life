@@ -1,0 +1,17 @@
+﻿@model Form4Life.ViewModels.SquatViewModel
+@{
+    ViewBag.Title = "Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<title>ViewBag.Title</title>
+<h2>@Model.Squat.Form</h2>
+@if (Model.Subscribers.Count == 0)
+{
+    <text>There are currently no subscribers.</text>
+}
+<ul>
+    @foreach (var subscribers in Model.Subscribers)
+    {
+        <li>@subscribers.Name</li>
+    }
+</ul>
