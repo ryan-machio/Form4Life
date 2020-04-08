@@ -9,9 +9,15 @@
 {
     <text>There are currently no subscribers.</text>
 }
-<ul>
-    @foreach (var subscribers in Model.Subscribers)
-    {
-        <li>@subscribers.Name</li>
-    }
-</ul>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Subscribers</th>
+    </tr>
+    <tr>
+        <td><a href="#">luke.thao@outlook.com</a></td>
+    </tr>
+    <tr>
+        <td><a href="#">ryan.manchanthasouk@outlook.com</a></td>
+    </tr>
+</table>
